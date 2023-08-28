@@ -8,3 +8,7 @@ def index(request):
     context ={}
     context['form']= TextInputForm()
     return render(request, "index.html", context)
+
+def parse_act(request):
+    msg = request.POST.get("message")
+    
